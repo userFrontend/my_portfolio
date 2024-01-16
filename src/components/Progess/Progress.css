@@ -1,0 +1,165 @@
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    background: transparent;
+}
+.container__progressbars {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    min-width: 270px;
+    /* margin: 50px 0; */
+    width: 100%;
+    height: 100%;
+}
+.progressbar {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin: 1em;
+    transform: rotate(-90deg);
+}
+.progressbar__svg {
+    position: relative;
+    width: 170px;
+    height: 170px;
+}
+.progressbar__svg-circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke: #fff;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+.shadow-html {
+    filter: drop-shadow(0 0 5px #f63);
+}
+.shadow-css {
+    filter: drop-shadow(0 0 5px #3bf);
+}
+.shadow-scss {
+    filter: drop-shadow(0 0 5px #f3f);
+}
+.shadow-js {
+    filter: drop-shadow(0 0 5px #ff3);
+}
+.shadow-ts {
+    filter: drop-shadow(0 0 5px #37f);
+}
+.shadow-node {
+    filter: drop-shadow(0 0 5px #5f3);
+}
+.shadow-react {
+    filter: drop-shadow(0 0 5px #3ff);
+}
+.shadow-angular {
+    filter: drop-shadow(0 0 5px #f33);
+}
+.shadow-vue {
+    filter: drop-shadow(0 0 5px #3f8);
+}
+.shadow-web {
+    filter: drop-shadow(0 0 5px #faf    );
+}
+.circle-html {
+    animation: anim_circle-html 1.4s ease-in-out forwards;
+}
+.circle-css {
+    animation: anim_circle-css 1.4s ease-in-out forwards;
+}
+.circle-scss {
+    animation: anim_circle-scss 1.4s ease-in-out forwards;
+}
+.circle-js {
+    animation: anim_circle-js 1.4s ease-in-out forwards;
+}
+.circle-ts {
+    animation: anim_circle-ts 1.4s ease-in-out forwards;
+}
+.circle-node {
+    animation: anim_circle-node 1.4s ease-in-out forwards;
+}
+.circle-react {
+    animation: anim_circle-react 1.4s ease-in-out forwards;
+}
+.circle-angular {
+    animation: anim_circle-angular 1.4s ease-in-out forwards;
+}
+.circle-vue {
+    animation: anim_circle-vue 1.4s ease-in-out forwards;
+}
+.circle-web {
+    animation: anim_circle-web 1.4s ease-in-out forwards;
+}
+.progressbar__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0.25em 0.5em;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+@keyframes anim_circle-html {
+    to {
+        stroke-dashoffset: 40;
+   }
+}
+@keyframes anim_circle-css {
+    to {
+        stroke-dashoffset: 60;
+   }
+}
+@keyframes anim_circle-scss {
+    to {
+        stroke-dashoffset: 70;
+   }
+}
+@keyframes anim_circle-js {
+    to {
+        stroke-dashoffset: 100;
+   }
+}
+@keyframes anim_circle-ts {
+    to {
+        stroke-dashoffset: 200;
+   }
+}
+@keyframes anim_circle-node {
+    to {
+        stroke-dashoffset: 70;
+   }
+}
+@keyframes anim_circle-react {
+    to {
+        stroke-dashoffset: 40;
+   }
+}
+@keyframes anim_circle-angular {
+    to {
+        stroke-dashoffset: 410;
+   }
+}
+@keyframes anim_circle-vue {
+    to {
+        stroke-dashoffset: 300;
+   }
+}
+@keyframes anim_circle-web {
+    to {
+        stroke-dashoffset: 380;
+   }
+}

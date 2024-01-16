@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --textColor: ;
+  --bgColor: ;
+  --boxShadow: ;
+  --primary-color: #f9532d;
+  --primary-dark: #1F252E;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #1F252E;
+  color: #ffffff;
+  -webkit-overflow-scrolling: none;
+}
+
+.container{
+  max-width: 1440px;
+  padding: 0 5.4rem;
+}
+
+.card-box{
+  padding: 50px 0;
+  height: 100%;
+}
+
+section{
+  padding: 50px 0;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.title{
+  text-align: center;
+  border-bottom: 1px solid gold;
+  padding: 10px 0;
+}
