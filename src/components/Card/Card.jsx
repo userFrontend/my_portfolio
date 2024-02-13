@@ -20,7 +20,10 @@ const Card = ({projectCard}) => {
                     <span className="canvas_copy_subtitle">{projectCard?.js}</span>
                     <strong className="canvas_copy_title">{projectCard?.title}</strong>
                     <strong className="canvas_copy_title">{projectCard?.title_end}</strong>
-                    <Link to={projectCard.link}><button className="canvas_copy_details">Live Demo</button></Link>
+                    <div style={{display: 'flex', gap: '10px'}}>
+                        <Link to={projectCard.link}><button className="canvas_copy_details">Live Demo</button></Link>
+                        <Link to={projectCard.git}><button className="canvas_copy_details">Get Code</button></Link>
+                    </div>
                 </div>
             </div>
         </div>
