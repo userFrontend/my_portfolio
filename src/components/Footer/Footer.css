@@ -35,3 +35,22 @@
     height: 30px;
     object-fit: contain;
 }
+
+@media (max-width: 450px){
+    .footer-about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-box{
+        gap: 20px;
+    }
+
+    .footer-about .footer-link{
+        font-size: 12px;
+        /* text-align: center; */
+    }
+}

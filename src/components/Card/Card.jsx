@@ -21,8 +21,8 @@ const Card = ({projectCard}) => {
                     <strong className="canvas_copy_title">{projectCard?.title}</strong>
                     <strong className="canvas_copy_title">{projectCard?.title_end}</strong>
                     <div style={{display: 'flex', gap: '10px'}}>
-                        <Link to={projectCard.link}><button className="canvas_copy_details">Live Demo</button></Link>
-                        <Link to={projectCard.git}><button className="canvas_copy_details">Get Code</button></Link>
+                        <Link target='_blank' to={projectCard.link}><button className="canvas_copy_details">Live Demo</button></Link>
+                        <Link target='_blank' to={projectCard.git}><button className="canvas_copy_details">Get Code</button></Link>
                     </div>
                 </div>
             </div>

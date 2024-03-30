@@ -22,7 +22,7 @@ body {
 
 .container{
   max-width: 1440px;
-  padding: 0 5.4rem;
+  padding: 0 70px;
 }
 
 .card-box{
@@ -42,4 +42,10 @@ a{
   text-align: center;
   border-bottom: 1px solid gold;
   padding: 10px 0;
+}
+
+@media (max-width: 450px) {
+  .container{
+    padding: 0 20px !important;
+  }
 }

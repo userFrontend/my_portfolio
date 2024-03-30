@@ -163,3 +163,17 @@
         stroke-dashoffset: 0;
    }
 }
+
+@media (max-width: 400px){
+    .progressbar{
+        width: 70px;
+        /* height: 70px; */
+    }   
+
+    .progressbar__svg{
+    }
+
+    .progressbar__text{
+        height: 80%;
+    }
+}
