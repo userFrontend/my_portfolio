@@ -27,7 +27,7 @@ const Progress = () => {
             <circle cx="80" cy="80" r="70" className="progressbar__svg-circle circle-scss shadow-scss"> </circle>
             </svg>
             <span className="progressbar__text shadow-scss">
-                SCSS
+                
             </span>
         </div>
         <div className="progressbar">

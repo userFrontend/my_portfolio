@@ -3,7 +3,7 @@ import BoxObject from '../Object'
 import './Hero.css'
 import { Link } from 'react-router-dom'
 
-const Hero = () => {
+const Hero = ({scrollTo, contact}) => {
   const [glbUrl, setGlbUrl] = useState(JSON.parse(localStorage.getItem("car")) || '/glb/Lamborghini')
   const urls = [
     '/glb/BMW',
@@ -59,7 +59,7 @@ const Hero = () => {
                 <h3>Hello, I'm</h3>
                 <h1><span style={{color:"#f9532d"}}>Ravshanov</span> Miraziz</h1>
                 <p>I'm a professional Web Developer. Our Main Goal to help & Satisficed the Local & Global Clients by web development solutions</p>
-                <button>Contact Us</button>
+                <button onClick={() => {scrollTo(contact.current);}}>Contact Us</button>
             </div>
         </div>
     </div>
