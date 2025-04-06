@@ -14,7 +14,6 @@ const Footer = () => {
               </div>
                 <div style={{padding: '20px 0'}} className="div-about">
                 <div className="footer-input">
-                  <input style={{padding: '10px', borderRadius: '10px'}} type="text" placeholder='Enter Your Email' />
                   <div className="input-icon"><i className="fa-solid fa-arrow-right"></i></div>
                   <div className='footer-img' style={{display: 'flex'}}>
                     <Link to='https://github.com/userFrontend'>
@@ -35,29 +34,9 @@ const Footer = () => {
                 </div>      
                 </div>
               </div>
-              <div className="footer-box">
-                <div className="footer-link">
-                  <h4>Buying & Selling</h4>
-                  <Link>Find a car</Link> <br />
-                  <Link>Listings by city</Link> <br />
-                  <Link>Sell your car</Link> <br />
-                  <Link>Compare side by side</Link>
-                </div>
-                <div className="footer-link">
-                  <h4>Resource</h4>
-                  <Link>Blog</Link> <br />
-                  <Link>Guides</Link> <br />
-                  <Link>FAQ</Link> <br />
-                  <Link>Help Center</Link>
-                </div>
-                <div className="footer-link">
-                  <h4>About</h4>
-                  <Link>Company</Link> <br />
-                  <Link>Career</Link> <br />
-                  <Link>Contact</Link>
-                </div>
-
-              </div>
+              <form className="footer-form">
+                
+              </form>
         </div>
         <div style={{textAlign: 'center', padding: '30px 0'}}>
           <h6>

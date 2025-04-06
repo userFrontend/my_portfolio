@@ -1,7 +1,19 @@
-.slick-carousel{}
+
 .carousel{
     height: 500px;
     padding:50px;
+}
+
+.slick-slider {
+    padding: 0 10px;
+}
+
+.slick-prev  {
+    left: 10px !important;
+}
+
+.slick-next {
+    right: 10px !important;
 }
 
 @media (max-width: 450px){

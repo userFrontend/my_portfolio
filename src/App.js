@@ -37,10 +37,6 @@ function App() {
         <section id='home' ref={home} style={{paddingTop: '40px'}}>
             <Hero/>
         </section>
-        <section id='about' ref={progress}>
-            <h2 className='title'>About</h2>
-            <Progress />
-        </section>
         <section id='project' ref={project}>
           <h2 className='title'><span></span>Projects<span> </span></h2>
             <div className='card-box'>
@@ -50,6 +46,10 @@ function App() {
                 })}
               </SlickCarousel>
             </div>
+        </section>
+        <section id='about' ref={progress}>
+            <h2 className='title'>About</h2>
+            <Progress />
         </section>
       </div>
     </main>

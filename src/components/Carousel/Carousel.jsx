@@ -12,6 +12,7 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
                 breakpoint: 320,
                 settings: {
                     dots: true,
+                    arrows: true,
                     fade: fade ? true : false,
                     speed: 500,
                     slidesToShow: sm,
@@ -25,6 +26,7 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
                 breakpoint: 768,
                 settings: {
                     dots: true,
+                    arrows: true,
                     fade: fade ? true : false,
                     speed: 500,
                     slidesToShow: md,
@@ -38,6 +40,7 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
                 breakpoint: 1200,
                 settings: {
                     dots: true,
+                    arrows: true,
                     fade: fade ? true : false,
                     speed: 500,
                     slidesToShow: lg,
@@ -48,9 +51,10 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
                 }
                 },
                 {
-                breakpoint: 1600,
+                breakpoint: 2450,
                 settings: {
                     dots: true,
+                    arrows: true,
                     fade: fade ? true : false,
                     speed: 500,
                     slidesToShow: xl,
