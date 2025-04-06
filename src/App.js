@@ -35,7 +35,7 @@ function App() {
     <main>
       <div className='container'>
         <section id='home' ref={home} style={{paddingTop: '40px'}}>
-            <Hero/>
+            <Hero scrollTo={scrollTo} contact={contact}/>
         </section>
         <section id='project' ref={project}>
           <h2 className='title'><span></span>Projects<span> </span></h2>

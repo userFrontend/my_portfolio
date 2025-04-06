@@ -1,17 +1,22 @@
-.slick-carousel{}
-.carousel{
-    height: 500px;
-    padding:50px;
+.carousel {
+  height: 500px;
+  padding: 50px;
 }
 
-.slick-dots li button:before{
-    border-radius: 50%;
-    color: white !important;
+.slick-slider {
+  padding: 0 10px;
 }
 
-@media (max-width: 450px){
-    .carousel{
-        padding: 0 !important;
-    }
+.slick-prev {
+  left: 10px !important;
+}
 
+.slick-next {
+  right: 10px !important;
+}
+
+@media (max-width: 450px) {
+  .carousel {
+    padding: 0 !important;
+  }
 }

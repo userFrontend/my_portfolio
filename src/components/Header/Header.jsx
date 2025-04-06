@@ -7,23 +7,23 @@ const Header = ({scrollTo, progress, home, project, contact}) => {
           <div className="container">
                 <div className="header-box">
                     <div className="logo">
-                      <b onClick={() => {scrollTo(home.current);}} className='logo_img'>
-                          Developer.
-                      </b>
+                      <a onClick={() => {scrollTo(home.current);}} className='logo_img'>
+                          <span style={{color:"#f9532d"}}>MR</span>Dev
+                      </a>
                     </div>
-                    <nav className='navbar'>
+                    <nav className='header-nav'>
                       <ul className="nav-list">
                           <li className="nav-item">
-                            <b onClick={() => {scrollTo(home.current);}} className='nav-link'>Home</b>
+                            <a onClick={() => {scrollTo(home.current);}} className='nav-link'>Home</a>
                           </li>
                           <li className="nav-item">
-                            <b onClick={() => {scrollTo(progress.current);}} className='nav-link'>About</b>
+                            <a onClick={() => {scrollTo(progress.current);}} className='nav-link'>About</a>
                           </li>
                           <li className="nav-item">
-                            <b onClick={() => {scrollTo(project.current);}} className='nav-link'>Projects</b>
+                            <a onClick={() => {scrollTo(project.current);}} className='nav-link'>Projects</a>
                           </li>
                           <li className="nav-item">
-                            <b onClick={() => {scrollTo(contact.current);}} className='nav-link'>Contact</b>
+                            <a onClick={() => {scrollTo(contact.current);}} className='nav-link'>Contact</a>
                           </li>
                       </ul>
                     </nav>

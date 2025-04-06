@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 :root{
@@ -40,12 +41,16 @@ a{
 
 .title{
   text-align: center;
-  border-bottom: 1px solid gold;
-  padding: 10px 0;
+  border-bottom: 1px solid #f9532d;
+  padding: 10px 0 20px 0;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .container{
-    padding: 0 20px !important;
+    padding: 0 50px !important;
+  }
+  .canvas-wrapper{
+    margin: 0 10px 0 auto;
+    width: 70%;
   }
 }

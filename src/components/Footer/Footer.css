@@ -38,6 +38,36 @@
   object-fit: contain;
 }
 
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-form input,
+.footer-form textarea {
+  width: 430px;
+  padding: 10px;
+  outline: none;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+.footer-about input:placeholder-shown,
+.footer-about textarea:placeholder-shown {
+  border-color: white;
+}
+
+.footer-about button {
+  background-color: #f9532d; /* input yoki textarea fokusda bo'lsa */
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 @media (max-width: 450px) {
   .footer-about {
     display: flex;

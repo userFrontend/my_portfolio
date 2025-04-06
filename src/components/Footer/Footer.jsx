@@ -1,63 +1,60 @@
 import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 const Footer = () => {
+  const sendSubmit = async (e) => {
+    e.preventDefault()
+    const data = new FormData(e.target)
+    try {
+      const res = await axios.post(`https://olx-server-omega.vercel.app/api/message/me`, data)
+      console.log(res);
+      
+    } catch (error) {
+      console.log(error);
+      
+    }
+  }
+
   return (
     <div className='container'>
+        <h2 className='title' style={{marginBottom: '100px'}}><span></span>Contact<span> </span></h2>
         <div className="footer-about">
               <div className="">
               <div className="logo">
-                <b className='logo_img'>
-                  Developer.
-                </b>
+                <a className='logo_img'>
+                  <span style={{color:"#f9532d"}}>MR</span>Dev
+                </a>
               </div>
                 <div style={{padding: '20px 0'}} className="div-about">
-                <div className="footer-input">
-                Tel: <Link to='tel:+998934905134'>+998 93 490 51 34</Link> <br />
-                Tel: <Link to='tel:+998900241566'>+998 90 024 15 66</Link> <br />
-                Email: <Link to='mailto:aba06096@gmail.com'>aba06096@gmail.com</Link>
-                  <div className="input-icon"><i className="fa-solid fa-arrow-right"></i></div>
-                  <div className='footer-img' style={{display: 'flex'}}>
-                    <Link target='_blank' to="https://github.com/userFrontend" className="img">
+                  <Link to='tel:+998934905134'>Tel: +998934905134</Link> <br />
+                  <Link to='tel:+998930241566'>Tel: +998330241566</Link>
+                  <div className="footer-input">
+                    <div className="input-icon"><i className="fa-solid fa-arrow-right"></i></div>
+                    <div className='footer-img' style={{display: 'flex'}}>
+                      <Link target='_blank' to="https://github.com/userFrontend" className="img">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHDQ_CU0W38ktREqnPwdVlGCdA_e4xbaDK9NrjFOpD2AqdcajDV3c9_R3vp034nrC9eyvMThwY8ifNpmH3_8GMg_SzAsLKcWQeSskaVl8HjVtLWilhcBNwfep0yRxq-Z_klBXoYTVX0BaE39VwJ2a-drZup5i8owkdaZF0-KhCaodrtN2Rii9HPZrdlk/s1600/github.png" alt='' />
-                    </Link>
-                    <Link target='_blank' to='https://instagram.com/_offical_developer' className="img">
-                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoPvxJtYJq2-7BDn6LGcQ6QsT3Bo0vxkKu8WAOZnqsHIiTtGJqsHHHWlqqYN4iQFlVaqTaq7AFkWbY5Wrqxvk9Se1Wc_rjA7UKZoXHoxqSWXyaTg9aL9RC37H78NTnT4TwePdwqEYwVw8VxtjPoy6eG-f7RTJhX0JCa0lPmpfaz69hJ1ZHI9seBrUuvf4/s64/instagram.png" alt='' />
-                    </Link>
-                    <Link target='_blank' to='https://t.me/Frontend_deveIoper' className="img">
-                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-WWnXxgKNxwqarx8Vr_xpaCcwOQbv7bpFxWXy1o7DCq7jZNiT3CFdAo52AvJol-C-3InAzj6B4isdJVwVCAlUY9jxqgM43wDXrmfsqL4PGr-fsBG0YjcOzwAHFscoDXg3EGlhupxjKRwrMe7Y2bX9VzTc-RY95A03bV1avKnjwJZjh0HKbGZDEa73mPU/s1600/telegram.png" alt='' />
-                    </Link>
-                    <div className="img">
-                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiejpFbnjtnjhErKo-66_ATecAMmYtSrLzQYdIRMRAxLHtgMUZKnA6jGJQsTMnrniZmMhTZydWkR-l2cpZcGEBGlI4Ptl9ogR-NSPF2wNO5FQdMlL_xaGHQfPnSRIh0Lg4JX0PJLjg9p-tAL9Y8qFbbuGIW3YoolXiMja2qujyDjcFPYGzsPu-RyHle2Jc/s1600/youtube.png" alt='' />
+                      </Link>
+                      <Link target='_blank' to='https://instagram.com/_official_developer' className="img">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoPvxJtYJq2-7BDn6LGcQ6QsT3Bo0vxkKu8WAOZnqsHIiTtGJqsHHHWlqqYN4iQFlVaqTaq7AFkWbY5Wrqxvk9Se1Wc_rjA7UKZoXHoxqSWXyaTg9aL9RC37H78NTnT4TwePdwqEYwVw8VxtjPoy6eG-f7RTJhX0JCa0lPmpfaz69hJ1ZHI9seBrUuvf4/s64/instagram.png" alt='' />
+                      </Link>
+                      <Link target='_blank' to='https://t.me/Frontend_deveIoper' className="img">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-WWnXxgKNxwqarx8Vr_xpaCcwOQbv7bpFxWXy1o7DCq7jZNiT3CFdAo52AvJol-C-3InAzj6B4isdJVwVCAlUY9jxqgM43wDXrmfsqL4PGr-fsBG0YjcOzwAHFscoDXg3EGlhupxjKRwrMe7Y2bX9VzTc-RY95A03bV1avKnjwJZjh0HKbGZDEa73mPU/s1600/telegram.png" alt='' />
+                      </Link>
+                      <div className="img">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiejpFbnjtnjhErKo-66_ATecAMmYtSrLzQYdIRMRAxLHtgMUZKnA6jGJQsTMnrniZmMhTZydWkR-l2cpZcGEBGlI4Ptl9ogR-NSPF2wNO5FQdMlL_xaGHQfPnSRIh0Lg4JX0PJLjg9p-tAL9Y8qFbbuGIW3YoolXiMja2qujyDjcFPYGzsPu-RyHle2Jc/s1600/youtube.png" alt='' />
+                      </div>
                     </div>
-                  </div>
-                </div>      
+                  </div>      
                 </div>
               </div>
-              <div className="footer-box">
-                <div className="footer-link">
-                  <h4>Buying & Selling</h4>
-                  <Link>Find a Job</Link> <br />
-                  <Link>Listings by city</Link> <br />
-                  <Link>Sell your Job</Link> <br />
-                  <Link>Compare side by side</Link>
-                </div>
-                <div className="footer-link">
-                  <h4>Resource</h4>
-                  <Link>Blog</Link> <br />
-                  <Link>Guides</Link> <br />
-                  <Link>FAQ</Link> <br />
-                  <Link>Help Center</Link>
-                </div>
-                <div className="footer-link">
-                  <h4>About</h4>
-                  <Link>Company</Link> <br />
-                  <Link>Career</Link> <br />
-                  <Link>Contact</Link>
-                </div>
-
-              </div>
+              <form className="footer-form" onSubmit={sendSubmit}>
+                <input name='name' type="text" placeholder='Full Name' required />
+                <input name='contact' type="text" placeholder='Contacts: (Phone or Email)' required />
+                <textarea name="content" placeholder='Content' required ></textarea>
+                <button>Send to Me</button>
+              </form>
         </div>
         <div style={{textAlign: 'center', padding: '30px 0'}}>
           <h6>
