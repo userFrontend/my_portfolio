@@ -19,6 +19,7 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
                     infinite: true,
                     autoplay: true,
                     autoplaySpeed: speed,
+                    arrows: false
                 }
                 },
                 {
@@ -32,10 +33,11 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
                     infinite: true,
                     autoplay: true,
                     autoplaySpeed: speed,
+                    arrows: false
                 }
                 },
                 {
-                breakpoint: 1200,
+                breakpoint: 1240,
                 settings: {
                     dots: true,
                     fade: fade ? true : false,
@@ -45,10 +47,11 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
                     infinite: true,
                     autoplay: true,
                     autoplaySpeed: speed,
+                    arrows: true
                 }
                 },
                 {
-                breakpoint: 1600,
+                breakpoint: 1600  ,
                 settings: {
                     dots: true,
                     fade: fade ? true : false,
@@ -58,6 +61,7 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
                     infinite: true,
                     autoplay: true,
                     autoplaySpeed: speed,
+                    arrows: true
                 }
                 }
             ]}>

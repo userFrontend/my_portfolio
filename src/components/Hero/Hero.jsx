@@ -48,16 +48,18 @@ const Hero = () => {
                 </div>
                 <select style={{outline: 'none', margin: '50px 100px', borderRadius:'10px', padding:'5px' }} onChange={handleImg}>
                   {glbUrl &&  <option selected defaultValue={`${glbUrl}`}>{glbUrl.split('/glb/')}</option>}
-                  {urls?.map(url => {
+                  {urls?.length > 0 && urls.map(url => {
                     if(url !== glbUrl){
-                      return <option key={url} value={`${url}`}>{url.split('/glb/')}</option>
+                      return (<option key={url} value={`${url}`}>{url.split('/glb/')}</option>)
+                    } else {
+                      return <h2 style={{textAlign: 'center'}}>...</h2>
                     }
                   })}
                 </select>
             </div>
             <div className="detail">
                 <h3>Hello, I'm</h3>
-                <h1><span style={{color:"#f9532d"}}>Ravshanov</span> Miraziz</h1>
+                <h1><span style={{color:"#f9532d"}}>Ravshanov</span><br /> Miraziz</h1>
                 <p>I'm a professional Web Developer. Our Main Goal to help & Satisficed the Local & Global Clients by web development solutions</p>
                 <button>Contact Us</button>
             </div>

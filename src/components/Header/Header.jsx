@@ -8,7 +8,7 @@ const Header = ({scrollTo, progress, home, project, contact}) => {
                 <div className="header-box">
                     <div className="logo">
                       <b onClick={() => {scrollTo(home.current);}} className='logo_img'>
-                            Developer.
+                          Developer.
                       </b>
                     </div>
                     <nav className='navbar'>

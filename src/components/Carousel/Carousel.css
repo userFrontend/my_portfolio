@@ -4,6 +4,11 @@
     padding:50px;
 }
 
+.slick-dots li button:before{
+    border-radius: 50%;
+    color: white !important;
+}
+
 @media (max-width: 450px){
     .carousel{
         padding: 0 !important;

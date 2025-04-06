@@ -14,13 +14,13 @@ const Footer = () => {
               </div>
                 <div style={{padding: '20px 0'}} className="div-about">
                 <div className="footer-input">
-                  <input style={{padding: '10px', borderRadius: '10px'}} type="text" placeholder='Enter Your Email' />
+                Tel: <Link to='tel:+998934905134'>+998 93 490 51 34</Link> <br />
+                Tel: <Link to='tel:+998900241566'>+998 90 024 15 66</Link> <br />
+                Email: <Link to='mailto:aba06096@gmail.com'>aba06096@gmail.com</Link>
                   <div className="input-icon"><i className="fa-solid fa-arrow-right"></i></div>
                   <div className='footer-img' style={{display: 'flex'}}>
-                    <Link to='https://github.com/userFrontend'>
-                      <Link target='_blank' to="https://github.com/userFrontend" className="img">
-                          <img style={{height: '30px'}} src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHDQ_CU0W38ktREqnPwdVlGCdA_e4xbaDK9NrjFOpD2AqdcajDV3c9_R3vp034nrC9eyvMThwY8ifNpmH3_8GMg_SzAsLKcWQeSskaVl8HjVtLWilhcBNwfep0yRxq-Z_klBXoYTVX0BaE39VwJ2a-drZup5i8owkdaZF0-KhCaodrtN2Rii9HPZrdlk/s1600/github.png" alt='' />
-                      </Link>
+                    <Link target='_blank' to="https://github.com/userFrontend" className="img">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHDQ_CU0W38ktREqnPwdVlGCdA_e4xbaDK9NrjFOpD2AqdcajDV3c9_R3vp034nrC9eyvMThwY8ifNpmH3_8GMg_SzAsLKcWQeSskaVl8HjVtLWilhcBNwfep0yRxq-Z_klBXoYTVX0BaE39VwJ2a-drZup5i8owkdaZF0-KhCaodrtN2Rii9HPZrdlk/s1600/github.png" alt='' />
                     </Link>
                     <Link target='_blank' to='https://instagram.com/_offical_developer' className="img">
                       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoPvxJtYJq2-7BDn6LGcQ6QsT3Bo0vxkKu8WAOZnqsHIiTtGJqsHHHWlqqYN4iQFlVaqTaq7AFkWbY5Wrqxvk9Se1Wc_rjA7UKZoXHoxqSWXyaTg9aL9RC37H78NTnT4TwePdwqEYwVw8VxtjPoy6eG-f7RTJhX0JCa0lPmpfaz69hJ1ZHI9seBrUuvf4/s64/instagram.png" alt='' />
@@ -38,9 +38,9 @@ const Footer = () => {
               <div className="footer-box">
                 <div className="footer-link">
                   <h4>Buying & Selling</h4>
-                  <Link>Find a car</Link> <br />
+                  <Link>Find a Job</Link> <br />
                   <Link>Listings by city</Link> <br />
-                  <Link>Sell your car</Link> <br />
+                  <Link>Sell your Job</Link> <br />
                   <Link>Compare side by side</Link>
                 </div>
                 <div className="footer-link">
