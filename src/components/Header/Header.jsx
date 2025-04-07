@@ -8,7 +8,7 @@ const Header = ({scrollTo, progress, home, project, contact}) => {
                 <div className="header-box">
                     <div className="logo">
                       <a onClick={() => {scrollTo(home.current);}} className='logo_img'>
-                          <span style={{color:"#f9532d"}}>MR</span>Dev
+                        <span style={{color:"#f9532d"}}>Rav</span>Mira
                       </a>
                     </div>
                     <nav className='header-nav'>

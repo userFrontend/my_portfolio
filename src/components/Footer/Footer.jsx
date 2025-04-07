@@ -1,22 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Footer = () => {
-  const sendSubmit = async (e) => {
-    e.preventDefault()
-    const data = new FormData(e.target)
-    try {
-      const res = await axios.post(`https://olx-server-omega.vercel.app/api/message/me`, data)
-      console.log(res);
-      
-    } catch (error) {
-      console.log(error);
-      
-    }
-  }
+  const [send, setSend] = useState('');
+  const [status, setStatus] = useState(''); // 'success', 'error', ''
 
+  const sendSubmit = async (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+
+    setSend('Sending...');
+    try {
+      const res = await axios.post(
+        `https://olx-server-omega.vercel.app/api/message/me`,
+        data
+      );
+      setSend('Sended 😊');
+      setStatus('success');
+      e.target.reset();
+
+      setTimeout(() => {
+        setSend('');
+        setStatus('');
+      }, 2000);
+    } catch (error) {
+      setSend('Ops not sent... 🤷‍♂️');
+      setStatus('error');
+
+      setTimeout(() => {
+        setSend('');
+        setStatus('');
+      }, 2000);
+    }
+  };
   return (
     <div className='container'>
         <h2 className='title' style={{marginBottom: '100px'}}><span></span>Contact<span> </span></h2>
@@ -24,12 +42,13 @@ const Footer = () => {
               <div className="">
               <div className="logo">
                 <a className='logo_img'>
-                  <span style={{color:"#f9532d"}}>MR</span>Dev
+                  <span style={{color:"#f9532d"}}>Rav</span>Mira
                 </a>
               </div>
                 <div style={{padding: '20px 0'}} className="div-about">
-                  <Link to='tel:+998934905134'>Tel: +998934905134</Link> <br />
-                  <Link to='tel:+998930241566'>Tel: +998330241566</Link>
+                  <Link to='tel:+998934905134'><span style={{color:"#f9532d"}}>Tel:</span> +998934905134</Link> <br />
+                  <Link to='tel:+998930241566'><span style={{color:"#f9532d"}}>Tel:</span> +998330241566</Link> <br />
+                  <Link to='mailto:aba06096@gmail.com' rel="noopener noreferrer"><span style={{color:"#f9532d"}}>Email: </span> aba06096@gmail.com</Link>
                   <div className="footer-input">
                     <div className="input-icon"><i className="fa-solid fa-arrow-right"></i></div>
                     <div className='footer-img' style={{display: 'flex'}}>
@@ -50,10 +69,21 @@ const Footer = () => {
                 </div>
               </div>
               <form className="footer-form" onSubmit={sendSubmit}>
-                <input name='name' type="text" placeholder='Full Name' required />
-                <input name='contact' type="text" placeholder='Contacts: (Phone or Email)' required />
-                <textarea name="content" placeholder='Content' required ></textarea>
-                <button>Send to Me</button>
+                <input name='name' type="text" placeholder='What is your name?' required minLength={3}/>
+                <input name='contact' type="text" placeholder='Your contacts: (Phone/Email/Telegram)' required minLength={5}/>
+                <textarea name="content" placeholder='How can I help?' required minLength={30}></textarea>
+                <button
+                disabled={send}
+                    type="submit"
+                    style={{
+                      backgroundColor:
+                        status === "success" ? "green" : status === "error" ? "red" : "#f9532d",
+                      cursor: "pointer",
+                      transition: "all 0.3s ease",
+                    }}
+                  >
+                    {send || 'Send to Me'}
+                </button>
               </form>
         </div>
         <div style={{textAlign: 'center', padding: '30px 0'}}>

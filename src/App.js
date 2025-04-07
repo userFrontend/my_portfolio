@@ -54,7 +54,6 @@ function App() {
       </div>
     </main>
     <footer id='footer' ref={contact}>
-      <h2 className='title'>Contact</h2>
       <Footer/>
     </footer>
   </>
