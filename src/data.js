@@ -8,19 +8,22 @@ import parallaxImg from './images/parallax.jpg'
 import scrollImg from './images/scroll.jpg'
 import showcaseImg from './images/showcase.jpg'
 import olxImg from './images/olx.jpg'
+import effect from './images/effect.jpg'
+import iceCream from './images/ice-cream.jpg'
+import beauty from './images/beauty.jpg'
 import pizza from './images/kuda.jpg'
 import hanyuban from './images/hanyuban.jpg'
 
 export const data = [
-    {
-        id: v4(),
-        js: 'React & Backend',
-        src: chatImg,
-        title: 'Chat',
-        title_end: 'Message',
-        link: 'https://chat-message-site.netlify.app/',
-        git: 'https://github.com/userFrontend/mernChat-client.git'
-    },
+    // {
+    //     id: v4(),
+    //     js: 'React & Backend',
+    //     src: chatImg,
+    //     title: 'Chat',
+    //     title_end: 'Message',
+    //     link: 'https://chat-message-site.netlify.app/',
+    //     git: 'https://github.com/userFrontend/mernChat-client.git'
+    // },
     {
         id: v4(),
         js: 'React & Backend',
@@ -48,6 +51,33 @@ export const data = [
         link: 'https://car-shopping-online.netlify.app',
         git: 'https://github.com/userFrontend/Car-app-frontend.git'
     },
+    {
+        id: v4(),
+        js: 'React & Backend',
+        src: effect,
+        title: 'Effect',
+        title_end: 'Jobs',
+        link: 'https://www.effectmehnat.com/',
+        git: 'https://github.com/userFrontend/Effect-profile.git'
+    },
+    {
+        id: v4(),
+        js: 'React & Backend',
+        src: beauty,
+        title: 'Beauty',
+        title_end: 'Brand',
+        link: 'https://online-market-hazel.vercel.app/',
+        git: 'https://github.com/userFrontend/online_market.git'
+    },
+    {
+        id: v4(),
+        js: 'React & Backend',
+        src: iceCream,
+        title: 'Company',
+        title_end: 'Akhmedov',
+        link: 'https://www.akmedov.uz/',
+        git: 'https://github.com/userFrontend/ice_cream.git'
+    },
     // {
     //     id: v4(),
     //     js: 'React & Backend',
@@ -57,15 +87,15 @@ export const data = [
     //     link: 'https://quize-app-exam.netlify.app',
     //     git: ''
     // },
-    {
-        id: v4(),
-        js: 'React & Backend',
-        src: gallaryImg,
-        title: 'Gallary',
-        title_end: 'Save',
-        link: 'https://gallary-save-app.netlify.app/',
-        git: 'https://github.com/userFrontend/Gallary-Cloud.git'
-    },
+    // {
+    //     id: v4(),
+    //     js: 'React & Backend',
+    //     src: gallaryImg,
+    //     title: 'Gallary',
+    //     title_end: 'Save',
+    //     link: 'https://gallary-save-app.netlify.app/',
+    //     git: 'https://github.com/userFrontend/Gallary-Cloud.git'
+    // },
     {
         id: v4(),
         js: 'React & SCSS',
@@ -77,7 +107,7 @@ export const data = [
     },
     {
         id: v4(),
-        js: 'EJS & MySQL',
+        js: 'EJS & PostgreSQL',
         src: taskImg,
         title: 'Task',
         title_end: 'App',
