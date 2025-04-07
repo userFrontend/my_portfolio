@@ -68,7 +68,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .footer-about {
     display: flex;
     align-items: center;
@@ -76,7 +76,9 @@
     flex-direction: column;
     gap: 10px;
   }
-
+  .footer-form input, .footer-form textarea {
+    width: 100% !important;
+  }
   .footer-box {
     gap: 20px;
   }

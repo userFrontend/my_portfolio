@@ -21,7 +21,7 @@ body {
   -webkit-overflow-scrolling: none;
 }
 
-.container{
+.container , #about{
   max-width: 1440px;
   padding: 0 70px;
 }
@@ -46,6 +46,9 @@ a{
 }
 
 @media (max-width: 500px) {
+  #about{
+    padding: 0 10px !important;
+  }
   .container{
     padding: 0 50px !important;
   }

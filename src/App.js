@@ -33,11 +33,13 @@ function App() {
   return (<>
     <Header scrollTo={scrollTo} progress={progress} contact={contact} home={home} project={project}/>
     <main>
-      <div className='container'>
         <section id='home' ref={home} style={{paddingTop: '40px'}}>
+          <div className='container'>
             <Hero scrollTo={scrollTo} contact={contact}/>
+          </div>
         </section>
         <section id='project' ref={project}>
+        <div className='container'>
           <h2 className='title'><span></span>Projects<span> </span></h2>
             <div className='card-box'>
               <SlickCarousel speed={2000} sm={1} md={1} lg={2} xl={3} fade={false}>
@@ -45,13 +47,13 @@ function App() {
                     return <Card key={item.id} projectCard={item}/>
                 })}
               </SlickCarousel>
-            </div>
+            </div>        
+        </div>
         </section>
         <section id='about' ref={progress}>
             <h2 className='title'>About</h2>
             <Progress />
         </section>
-      </div>
     </main>
     <footer id='footer' ref={contact}>
       <Footer/>
